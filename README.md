@@ -121,6 +121,10 @@ At step 9 our application is successfully integrated with the azure app service,
 
 #Now every commit from the git hub will trigger CI in Github actions and also in Azure Pipeline
 
+![alt_text](Update-pipeline-on-commit.png)
+
+
+
 
 
 
