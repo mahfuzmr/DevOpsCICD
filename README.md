@@ -124,7 +124,7 @@ At step 9 our application is successfully integrated with the azure app service,
 
 #Now for every commit, git hub will trigger CI in Github actions and Azure pipeline will do CI and deliver the update into the webapp service(CD) through Azure Pipeline success.
 
-![alt_text](Update-pipeline-on-commit.png)
+![alt_text](ScreenCaptures/Update-pipeline-on-commit.png)
 
 
 
