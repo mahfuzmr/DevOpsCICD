@@ -110,16 +110,17 @@ At step 9 our application is successfully integrated with the azure app service,
 
 * Inthe azure portal create a new project 
 ![alt_text](ScreenCaptures/flask-project.png)
-* Head to Pipelines and click on 'New pipeline'.
 * From the setting menu connect the specific Github Repo
-* Configure the pipeline with the starter pipeline
+* Create a service connection based on the create _appservice_
+* Head to Pipelines and click on 'New pipeline'. Update the code for created service connection
+* Configure the pipeline in the .yml file.
 * Based on the latest commit Azure pipeline will create a starter basic YAML file (default)
 * When we save the file it will create pipeline JOB and run the process. A successful job build will look as follows:
 
 ![alt_text](ScreenCaptures/Section-6-pipeline.png)
 
 
-#Now every commit from the git hub will trigger CI in Github actions and also in Azure Pipeline
+#Now for every commit, git hub will trigger CI in Github actions and Azure pipeline will do CI and deliver the update into the webapp service(CD) through Azure Pipeline success.
 
 ![alt_text](Update-pipeline-on-commit.png)
 
