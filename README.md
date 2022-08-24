@@ -139,7 +139,7 @@ or
     (.myrepo) mahfuzur [ ~/DevOpsCICD ]$ az webapp log tail
 ```
 
-![alt_text](logtail.png)
+![alt_text](ScreenCaptures/logtail.png)
 
 
 # Work flow Demo
