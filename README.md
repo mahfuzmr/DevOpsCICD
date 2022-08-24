@@ -58,10 +58,14 @@ And the output sould look ike the follows:
 
 # Integration with Github Action
 
-When the system is successfully installing all the dependencies from the requirements.txt file it is time to create CI through github [Action](https://github.com/features/actions)
+When the system is successfully installing all the dependencies from the requirements.txt file in step 5.It is time to create CI through github [Action](https://github.com/features/actions)
 * After login to the created repo Click on the Action Tab and "Set up a workflow". This will create a .yml file which has the pre written code for automation
 
  ![alt_text](ScreenCaptures/actionyaml.png)
+ 
+ * And when we create the .yml file and commit the build automation will be autometically triggereg. The succesfull build automation will look like as follows:
+
+ ![alt_text](ScreenCaptures/section-6-github-action.png)
 
 
 6. Create an app service and which will deploy the app in Cloud Shell:
@@ -88,8 +92,6 @@ When the system is successfully installing all the dependencies from the require
 A successful prediction will look like this:
 
 ![alt_text](ScreenCaptures/prediction-success.png)
-
-
 
 
 # Azure pipeline
