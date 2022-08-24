@@ -17,6 +17,13 @@ The overall architecture of this project is as follows:
 
 ![Architecture](ScreenCaptures/SystemDiagram.drawio.png)
 
+# Project Paln 
+* Qaterly plan [Qaterly plan](https://docs.google.com/spreadsheets/d/1Bn9ZQgle6v80NKEdfrtuNLnAG6NSBL9CRmgfJ8xCKZw/edit#gid=213763889)
+* Weekly project plan for complete year(:anger: With complexity indication by color :anger:) [Weekly Plan](https://docs.google.com/spreadsheets/d/1Bn9ZQgle6v80NKEdfrtuNLnAG6NSBL9CRmgfJ8xCKZw/edit#gid=1348135932)
+
+# Trello 
+* Project workspace on [Trello](https://trello.com/invite/b/kwXF8kaZ/04fdfb33a716cb77f0a5cba7c01f9e32/devopscicd)
+
 #Instraction
 ## Creating a repository in github
 Using your GitHub account first create a repo with azure pipeline enabled. Azure pipeline could be installed through Github [Marketplace](https://github.com/marketplace?type=)
@@ -51,17 +58,17 @@ And the output sould look ike the follows:
 
 6. Create an app service and which will deploy the app in Cloud Shell:
 
-![alt_text](ScreenCaptures/app deployment in cloud shell.png)
+![alt_text](ScreenCaptures/app-deployment-in-cloud-shell.png)
+
+7. Set your app deployed and running in a seperate web browser. If the deployment is successfull is will show the initial message in the browser
+
+![alt_text](ScreenCaptures/Section-6-appservice.png)
 
 
-# Project Paln 
-* Qaterly plan [Qaterly plan](https://docs.google.com/spreadsheets/d/1Bn9ZQgle6v80NKEdfrtuNLnAG6NSBL9CRmgfJ8xCKZw/edit#gid=213763889)
-* Weekly project plan for complete year(:anger: With complexity indication by color :anger:) [Weekly Plan](https://docs.google.com/spreadsheets/d/1Bn9ZQgle6v80NKEdfrtuNLnAG6NSBL9CRmgfJ8xCKZw/edit#gid=1348135932)
 
-# Trello 
-* Project workspace on [Trello](https://trello.com/invite/b/kwXF8kaZ/04fdfb33a716cb77f0a5cba7c01f9e32/devopscicd)
 
 # Integration with Github Action
+
 
 
 # Azure pipeline
