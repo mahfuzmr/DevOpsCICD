@@ -7,7 +7,7 @@
 This demo project demonstrates the steps of automation with DevOps and the overall guidelines of the CI/CD pipeline. This repo represents an ML web application that is run, built, tested, and deployed through GitHub action and azure pipelines. this project depicts the important minimum steps of DevOps integration and continuous improvement (KAIZEN).
 
 This repository is demonstrated with instructions as follows:
-- [Project Plan](#project-paln) 
+- [Project Plan](#project-plan) 
 - [Trello board](#trello)
 - [Integrating with Github Action](#integration-with-github-action)
 - [Azure Pipeline setup](#azure-pipeline)
@@ -129,7 +129,7 @@ At step 9 our application is successfully integrated with the azure app service,
 
 
 
-#Logs
+# Logs
 Logs can be visible for the running app service in two different ways
 1. Through azure provided api end point (https://my-ml-app-service.scm.azurewebsites.net/api/logs/docker)
 ![alt_text](ScreenCaptures/logsapi.png)
