@@ -42,7 +42,7 @@ mahfuzur@Azure:~$ cd DevOpsCICD
 
 ![alt_text](ScreenCaptures/Section-4.1.png)
 
-4. Run command to create virtual invironment for your application
+4. Run command to create virtual invironment for your application. Then activate the created python environment
 ```bash
 python3 -m venv ~/.flask-ml-azure
 source ~/.flask-ml-azure/bin/activate
@@ -56,18 +56,39 @@ And the output sould look ike the follows:
 
 ![alt_text](ScreenCaptures/Section-4.3.png)
 
+# Integration with Github Action
+
+When the system is successfully installing all the dependencies from the requirements.txt file it is time to create CI through github [Action](https://github.com/features/actions)
+* After login to the created repo Click on the Action Tab and "Set up a workflow". This will create a .yml file which has the pre written code for automation
+
+ ![alt_text](ScreenCaptures/actionyaml.png)
+
+
 6. Create an app service and which will deploy the app in Cloud Shell:
 
 ![alt_text](ScreenCaptures/app-deployment-in-cloud-shell.png)
 
-7. Set your app deployed and running in a seperate web browser. If the deployment is successfull is will show the initial message in the browser
+7. Update the "URL" in the file **make_predict_azure_app.sh**
+```bash
+-X POST https://<**my-ml-app-service**.azurewebsites.net:$PORT/predict> 
+```
+
+![alt_text](ScreenCaptures/url-update.png)
+
+9. Set your app deployed and running in a seperate web browser. If the deployment is successfull is will show the initial message in the browser
 
 ![alt_text](ScreenCaptures/Section-6-appservice.png)
 
+10. Now its time to test locally 
+* Build the app using app.py
+ ```bash
+    python app.py
+```
+* In a seperate browser tab open bas from the azure CLI again and run dommand to check the prediction locally
+A successful prediction will look like this:
 
+![alt_text](ScreenCaptures/prediction-success.png)
 
-
-# Integration with Github Action
 
 
 
