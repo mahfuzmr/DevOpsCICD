@@ -4,11 +4,11 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 trigger:
-- master
+- main
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: 'b9308417-ca3f-47b8-b778-12db1eb57342'
+  azureServiceConnectionId: 'a9d37403-49d1-42a9-94f5-59c18ba8e151'
 
   # Web app name
   webAppName: 'my-ml-app-service'
@@ -22,8 +22,8 @@ variables:
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
 
-  # Python version: 3.8
-  pythonVersion: '3.8.13'
+  # Python version: 3.7
+  pythonVersion: '3.7'
 
 stages:
 - stage: Build
