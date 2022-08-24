@@ -70,6 +70,10 @@ When the system is successfully installing all the dependencies from the require
 
 6. Create an app service which will deploy the app in Cloud Shell:
 
+```bash
+-az webapp up -n my-ml-app-service
+```
+
 ![alt_text](ScreenCaptures/app-deployment-in-cloud-shell.png)
 
 7. Update the "URL" in the file **make_predict_azure_app.sh**
