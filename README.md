@@ -96,6 +96,24 @@ A successful prediction will look like this:
 
 # Azure pipeline
 
+At step 9 our application is successfully integrated with azure app service , GitHub action and generating prediction. We will now move to our continious delivery process with azure pipeline.
+
+10. Ath this time our system is ready to go pon the pipeline process. Following steps will create a successful CD process.
+
+* Inthe azure portal create a new project 
+![alt_text](ScreenCaptures/flask-project.png)
+* Head to Pipelines and click on 'New pipeline'.
+* From the setting menue connect the specific Github Repo
+* Configure the pipeline with the starter pipeline
+* Based on the letest commit Azure pipeline will create a starter basic YAML file (default)
+* When we save the file it will create pipeline JOB and run the process. A successful job build will look as follows:
+* 
+![alt_text](ScreenCaptures/ScreenCaptures/Section-6-azure-pipeline.png)
+
+
+
+
+
 # Work flow Demo
 
 
