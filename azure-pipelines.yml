@@ -80,7 +80,7 @@ stages:
             displayName: 'Use Python version'
 
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : flask-ml-service'
+            displayName: 'Deploy Azure Web App : my-ml-app-service'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
