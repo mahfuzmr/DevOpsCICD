@@ -25,5 +25,5 @@ curl -d '{
    }
 }'\
      -H "Content-Type: application/json" \
-     -X POST https://azurecicdpipleline.azurewebsites.net:$PORT/predict
-     #your application name <yourappname>goes here
+     -X POST https://my-ml-app-service.azurewebsites.net:$PORT/predict
+     #your application name <yourappname>goes here "http://my-ml-app-service.azurewebsites.net"
