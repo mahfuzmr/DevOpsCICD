@@ -116,7 +116,7 @@ At step 9 our application is successfully integrated with the azure app service,
 * Based on the latest commit Azure pipeline will create a starter basic YAML file (default)
 * When we save the file it will create pipeline JOB and run the process. A successful job build will look as follows:
 
-![alt_text](ScreenCaptures/Section-6-azure-pipeline.png)
+![alt_text](ScreenCaptures/Section-6-pipeline.png)
 
 
 #Now every commit from the git hub will trigger CI in Github actions and also in Azure Pipeline
