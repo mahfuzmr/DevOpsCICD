@@ -1,4 +1,5 @@
 [![Python application test with Github Actions](https://github.com/mahfuzmr/DevOpsCICD/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/mahfuzmr/DevOpsCICD/actions/workflows/pythonapp.yml)
+[![Build Status](https://dev.azure.com/mahfuzmr/DevOpsCICD/_apis/build/status/mahfuzmr.DevOpsCICD?branchName=main)](https://dev.azure.com/mahfuzmr/DevOpsCICD/_build/latest?definitionId=7&branchName=main)
 # Agile Development with Azure Project: Building a CI/CD Pipeline
 
 ## Overview
@@ -10,6 +11,7 @@ This repository is demonstrated with instructions as follows:
 - [Trello board](#trello)
 - [Integrating with Github Action](#integration-with-github-action)
 - [Azure Pipeline setup](#azure-pipeline)
+- [Log viewer](#logs)
 - A [demo](#work-flow-demo) descriptive video
 
 
@@ -127,7 +129,17 @@ At step 9 our application is successfully integrated with the azure app service,
 
 
 
+#Logs
+Logs can be visible for the running app service in two different ways
+1. Through azure provided api end point (https://my-ml-app-service.scm.azurewebsites.net/api/logs/docker)
+![alt_text](ScreenCaptures/logsapi.png)
+or
+2. Running command on the cloud Shell
+ ```bash
+    (.myrepo) mahfuzur [ ~/DevOpsCICD ]$ az webapp log tail
+```
 
+![alt_text](logtail.png)
 
 
 # Work flow Demo
