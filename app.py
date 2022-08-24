@@ -20,14 +20,13 @@ def scale(payload):
 
 @app.route("/")
 def home():
-    html = "<h3>Sklearn Prediction Home</h3>"
+    html = "<h3>Sklearn Prediction Home - updated 07/09/2021</h3>"
     return html.format(format)
 
 # TO DO:  Log out the prediction value
 @app.route("/predict", methods=['POST'])
 def predict():
     """Performs an sklearn prediction
-
     input looks like:
             {
     "CHAS":{
@@ -48,10 +47,8 @@ def predict():
     "LSTAT":{
        "0":4.98
     }
-
     result looks like:
     { "prediction": [ 20.35373177134412 ] }
-
     """
 
     try:
@@ -69,4 +66,4 @@ def predict():
     return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=3000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
