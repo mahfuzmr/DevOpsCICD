@@ -104,7 +104,7 @@ A successful prediction will look like this:
 
 # Azure pipeline
 
-At step 9 our application is successfully integrated with the azure app service, GitHub action, and generating prediction. We will now move to our continuous delivery process with the azure pipeline.
+At step 9 our application is successfully integrated with the azure app service, GitHub action, and generating prediction. We will now move to our continuous delivery process with the azure pipeline. The ecosystem of azure pipeline could be understand by [DevOps Ecosystem](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops)
 
 10. At this time our system is ready to go on the pipeline process. The following steps will create a successful CD process.
 
