@@ -1,8 +1,5 @@
-pylint
-pytest
 Flask==2.0.3
 pandas
 scikit-learn
-jinja2==3.0
-locust
-joblib
+pylint
+pytest
