@@ -100,6 +100,7 @@ A successful build will show as in the following depiction
 ![alt_text](ScreenCaptures/Section-6-run-locally.png)
 
 * In a separate browser tab open bash from the azure CLI again and run command to check the prediction locally
+
 A successful prediction will look like this:
 
 ![alt_text](ScreenCaptures/prediction-success.png)
@@ -136,12 +137,12 @@ Now its time to load test. We can ensure the performance validation throug a ope
    pip install locust
 ```
 * Pust the sample data into the newly created _locustfile.py_ file
-*
+
 ![alt_text](ScreenCaptures/locust.py.png)
 
 * Set the calling parameter by selecting 20 user with 5 row as a chunks for 20 second run time.
  ```bash
-  locust -f locustfile.py --headless -u 20 -r 5 -t 20s
+ (.myrepo) mahfuzur [ ~/DevOpsCICD ]$ locust -f locustfile.py --headless -u 20 -r 5 -t 20s
 ```
 A successfull load testing will look like as :
 
