@@ -11,6 +11,7 @@ This repository is demonstrated with instructions as follows:
 - [Trello board](#trello)
 - [Integrating with Github Action](#integration-with-github-action)
 - [Azure Pipeline setup](#azure-pipeline)
+- [Load Testing](#load-test)
 - [Log viewer](#logs)
 - A [demo](#work-flow-demo) descriptive video
 
@@ -127,6 +128,24 @@ At step 9 our application is successfully integrated with the azure app service,
 ![alt_text](ScreenCaptures/Update-pipeline-on-commit.png)
 
 
+# Load Test
+
+Now its time to load test. We can ensure the performance validation throug a open source load testing tools [Locust](https://locust.io/). This will do GET and POST to our app service with some sample data to test the performance of our application/ appservice
+* Install locast in the project file
+ ```bash
+   pip install locust
+```
+* Pust the sample data into the newly created _locustfile.py_ file
+*
+![alt_text](ScreenCaptures/locust.py.png)
+
+* Set the calling parameter by selecting 20 user with 5 row as a chunks for 20 second run time.
+ ```bash
+  locust -f locustfile.py --headless -u 20 -r 5 -t 20s
+```
+A successfull load testing will look like as :
+
+![alt_text](ScreenCaptures/locust-2.png)
 
 
 # Logs
